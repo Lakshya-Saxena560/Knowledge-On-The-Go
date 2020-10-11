@@ -251,68 +251,13 @@ class Ui_MainWindow(object):
         self.page_3.setObjectName(u"page_3")
         self.verticalLayout_8 = QVBoxLayout(self.page_3)
         self.verticalLayout_8.setObjectName(u"verticalLayout_8")
+        self.label_3 = QLabel()
+        self.label_3.setText('See your prompt from where you started the application')
+        self.label_3.setWordWrap(True)
+        self.label_3.setFont(QFont('Roboto', 40))
 
-        self.host_label_1 = QLabel(self.page_3)
-        self.host_label_1.setFixedHeight(30)
-        self.host_label_1.setFont(QFont('Roboto', 15))
-        self.host_label_1.setStyleSheet("color: #FFF;")
-        self.host_label_1.setAlignment(Qt.AlignLeft)
+        self.verticalLayout_8.addWidget(self.label_3)
 
-        self.host_label_4 = QLabel(self.page_3)
-        self.host_label_4.setFixedHeight(30)
-        self.host_label_4.setFont(QFont('Roboto', 15))
-        self.host_label_4.setStyleSheet("color: #FFF;")
-        self.host_label_4.setAlignment(Qt.AlignLeft)
-
-        self.host_label_5 = QLabel(self.page_3)
-        self.host_label_5.setFixedHeight(30)
-        self.host_label_5.setFont(QFont('Roboto', 15))
-        self.host_label_5.setStyleSheet("color: #FFF;")
-        self.host_label_5.setAlignment(Qt.AlignLeft)
-
-        self.host_type = QLineEdit()
-        self.host_type.setFixedHeight(40)
-        self.host_type.setPlaceholderText('Type in your message and hit Enter: ')
-        self.host_type.setFixedHeight(60)
-        self.host_type.setFont(QFont('Roboto', 16))
-        self.host_type.setStyleSheet(u"color: #FFF;")
-
-        self.host_type.returnPressed.connect(lambda: on_enter_host())
-        self.host_type.returnPressed.connect(lambda: clear_text_host())
-
-        s_host = socket.socket()
-        hostname = socket.gethostname()
-
-        self.host_label_1.setText(f'Server will start on host: {hostname}\n Server bounded to host and port '
-                                  f'successfully \n Waiting for incoming connections')
-        port = 2020
-        s_host.bind((hostname, port))
-
-        s_host.listen(1)
-        conn, addr = s_host.accept()
-
-        self.host_label_4.setText(f'IP Address {addr} connected to the server')
-
-        def on_enter_host():
-            host = self.host_type.text()
-
-            while True:
-                message = host
-                message = message.encode()
-                conn.send(message)
-
-                incoming_message = conn.recv(512)
-                incoming_message = incoming_message.decode()
-                self.host_label_5.setText(f'Client: {incoming_message}')
-
-
-        def clear_text_host():
-            self.host_type.clear()
-
-        self.verticalLayout_8.addWidget(self.host_label_1)
-        self.verticalLayout_8.addWidget(self.host_label_4)
-        self.verticalLayout_8.addWidget(self.host_label_5)
-        self.verticalLayout_8.addWidget(self.host_type)
         self.stackedWidget.addWidget(self.page_3)
 
 
@@ -324,75 +269,22 @@ class Ui_MainWindow(object):
         self.page_4.setObjectName(u"page_4")
         self.verticalLayout_9 = QVBoxLayout(self.page_4)
         self.verticalLayout_9.setObjectName(u"verticalLayout_9")
+        self.label_4 = QLabel()
+        self.label_4.setText('See your prompt from where you started the application')
+        self.label_4.setWordWrap(True)
+        self.label_4.setFont(QFont('Roboto', 40))
 
-        self.client_label_1 = QLabel(self.page_3)
-        self.client_label_1.setFixedHeight(30)
-        self.client_label_1.setFont(QFont('Roboto', 15))
-        self.client_label_1.setStyleSheet("color: #FFF;")
-        self.client_label_1.setAlignment(Qt.AlignLeft)
-
-        self.client_label_5 = QLabel(self.page_3)
-        self.client_label_5.setFixedHeight(30)
-        self.client_label_5.setFont(QFont('Roboto', 15))
-        self.client_label_5.setStyleSheet("color: #FFF;")
-        self.client_label_5.setAlignment(Qt.AlignLeft)
-
-        self.client_type = QLineEdit()
-        self.client_type.setFixedHeight(40)
-        self.client_type.setPlaceholderText('First type in the server IP Address to which you wanna connect then Type in your message and hit Enter: ')
-        self.client_type.setFixedHeight(60)
-        self.client_type.setFont(QFont('Roboto', 16))
-        self.client_type.setStyleSheet(u"color: #FFF;")
-
-        self.client_type.returnPressed.connect(lambda: on_enter_client())
-        self.client_type.returnPressed.connect(lambda: clear_text_client())
-
-        def on_enter_client():
-            client = self.host_type.text()
-            s_client = socket.socket()
-            host = client
-            port = 2020
-
-
-            if s_client.connect((host, port)):
-                self.client_label_1.setText('Connection succesfully established')
-            else:
-                self.client_label_1.setText('Could not establish connection. Please try again or see if the server is'
-                                            ' even working or not.')
-
-
-            while True:
-                incoming_message = s_client.recv(512)
-                incoming_message = incoming_message.decode()
-                self.client_label_5.setText(f'Host: {incoming_message}')
-
-                message = client
-                message = message.encode()
-                s_client.send(message)
-
-        def clear_text_client():
-            self.client_type.clear()
-
-        self.verticalLayout_9.addWidget(self.client_label_1)
-        self.verticalLayout_9.addWidget(self.client_label_5)
-        self.verticalLayout_9.addWidget(self.client_type)
-
+        self.verticalLayout_9.addWidget(self.label_4)
         self.stackedWidget.addWidget(self.page_4)
 
 
 
         self.verticalLayout_5.addWidget(self.stackedWidget)
-
         self.horizontalLayout_2.addWidget(self.frame_pages)
-
         self.verticalLayout.addWidget(self.Content)
-
         MainWindow.setCentralWidget(self.centralwidget)
-
         self.retranslateUi(MainWindow)
-
         self.stackedWidget.setCurrentIndex(0)
-
         QMetaObject.connectSlotsByName(MainWindow)
 
     # setupUi

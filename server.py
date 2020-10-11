@@ -1,5 +1,6 @@
 import socket
 
+
 s = socket.socket()
 hostname = socket.gethostname()
 
