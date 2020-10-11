@@ -9,6 +9,7 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+        self.setWindowTitle('Knowledge On The Go')
 
         self.ui.Btn_Toggle.clicked.connect(lambda: UIFunctions.toggle_menu(self, 250, True))
 
