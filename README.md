@@ -1,2 +1,31 @@
 # Knowledge-On-The-Go
-# The-desperate-times-have-forced-the-human-mankind-to-be-forced-at-their-homes-.-But-the-humanmankind-will-not-as-usual-will-stop-.-Online-education-has-its-own-problem-that-have-been-still-not-been-properly-addressed-to-.-This-app-provides-many-bridges-to-the-solutions-of-the-problems-existing-in-online-education-.-This-unique-app-has-built-in-searchsystem-that-provides-accurate-definitions-needed-for-students-.-This-prevents-distractions-and-increase-productivity-of-students-.-This-first-of-its-kind-application-also-has-accurate-definitions-.-Along-with-this-,-this-application-has-a-section-for-information-from-wikipedia-giving-more-insight-on-a-topic-.-The-direct-chat-with-teacher-option-allows-direct-talk-with-the-teacher-especially-motivated-for-resolving-doubts-and-helping-students-,-allowing-the-teacher-to-keep-her-personal-and-school-tasks-differentiated-helping-the-teacher-and-helping-the-student-at-the-same-time-.-The-packages-used-in-this-app-are-PySide2-,-time-sys-and-socket-.-
+The desperate times have forced the human mankind to be forced at their home. But we, as usual, will not stop.
+
+Online Education has its own problems that have still not been properly addressed to. This app provides many bridges to the solutions of the problems existing in online education. This unique app has its own search system that provides accurate definitions needed for students. It will also avoid distraction and increase the productivity of the students.
+
+This first-off-its-kind app also have accurate definitions.
+
+Along with this, this app has a section where student can search for any information and they will get the results in the app itself through wikipedia giving more insight on a topic.
+
+There is also a direct chat woth teacher option where the students can connect to the teacher via entering the hostname of the teacher's computer, which will also allow the teacher to keep her personal and school tasks differentiated.
+
+Now, let's come to the developing section:
+
+This app is developed in pure python with an interactive gui.
+
+The packages used in this app are:
+
+PySide2
+
+Time
+
+Sys and
+
+Socket
+
+The contributors of this project are:
+
+Lakshya Saxena
+
+Amartyaa Sengupta
+
