@@ -31,5 +31,6 @@ socket
 
 # The contributors of this project are:
 
-Lakshya Saxena and
+Lakshya Saxena
+
 Amartyaa Sengupta
