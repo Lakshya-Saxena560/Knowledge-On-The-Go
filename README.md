@@ -27,6 +27,7 @@ time,
 sys, and
 socket
 
+The dictionary used in this project is dictionary.com
 
 
 # The contributors of this project are:
