@@ -14,6 +14,8 @@ There is also a direct chat woth teacher option where the students can connect t
 
 After opening the app, if a person clicks on the Message-Host or Message-Client he/she needs to go to the command line from where the program was started.
 
+This option is done so that a person can only open one messaging service at a time. Because some children have the tendency to chat along with their friends while they are taling to their teachers.
+
 # Now, let's come to the developing section:
 
 This app is developed in pure python with an interactive gui.
