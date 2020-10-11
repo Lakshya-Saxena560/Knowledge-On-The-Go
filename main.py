@@ -1,7 +1,5 @@
 import sys
-
 from PySide2.QtWidgets import QMainWindow, QApplication
-
 from ui_main import Ui_MainWindow
 from ui_functions import *
 
@@ -21,10 +19,21 @@ class MainWindow(QMainWindow):
         self.ui.btn_page_2.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_2))
 
         # PAGE 3 - Message-Server
-        self.ui.btn_page_3.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_3))
+        self.ui.btn_page_3.clicked.connect(lambda: self.server())
 
         # PAGE 4 - Message-Client
-        self.ui.btn_page_4.clicked.connect(lambda: self.ui.stackedWidget.setCurrentWidget(self.ui.page_4))
+        self.ui.btn_page_4.clicked.connect(lambda: self.client())
+
+    def server(self):
+        print()
+        print()
+        import server
+
+    def client(self):
+        print()
+        print()
+        import client
+
 
 
 if __name__ == "__main__":
