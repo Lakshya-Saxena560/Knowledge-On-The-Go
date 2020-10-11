@@ -9,24 +9,23 @@ Along with this, this app has a section where student can search for any informa
 
 There is also a direct chat woth teacher option where the students can connect to the teacher via entering the hostname of the teacher's computer, which will also allow the teacher to keep her personal and school tasks differentiated.
 
+
+NOTE: After opening the app, if a person clicks on the Message-Host or Message-Client he/she needs to go to the command line from where the program was started.
+
 Now, let's come to the developing section:
 
 This app is developed in pure python with an interactive gui.
 
 The packages used in this app are:
 
-PySide2
+PySide2,
+time,
+sys, and
+socket
 
-Time
-
-Sys and
-
-Socket
 
 
 The contributors of this project are:
 
-Lakshya Saxena
-
+Lakshya Saxena and
 Amartyaa Sengupta
-
