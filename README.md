@@ -34,8 +34,8 @@ The dictionary used in this project is dictionary.com
 After downloading or cloning this repository, run the main.py file
 
 
-# The contributors of this project are:
+# Contributors:
 
-Lakshya Saxena
+Lakshya Saxena (GitHub username: @Lakshya-Saxena560
 
-Amartyaa Sengupta
+Amartyaa Sengupta (GitHub username: @urnewreality)
