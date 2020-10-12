@@ -16,9 +16,11 @@ After opening the app, if a person clicks on the Message-Host or Message-Client 
 
 This option is done so that a person can only open one messaging service at a time. Because some children have the tendency to chat along with their friends while they are taling to their teachers.
 
-# Now, let's come to the developing section:
+# Developing Section:
 
 This app is developed in pure python with an interactive gui.
+
+The python version used for development is Python3.6.8
 
 The packages used in this app are:
 
@@ -28,6 +30,8 @@ sys, and
 socket
 
 The dictionary used in this project is dictionary.com
+
+After downloading or cloning this repository, run the main.py file
 
 
 # The contributors of this project are:
